@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#"
+     xml:base="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero">
+        <rdfs:comment>A tutorial ontology for the Pizza domain.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasBase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isBaseOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasIngredient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isToppingOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isBaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isBaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isIngredientOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isToppingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isToppingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BBQTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BBQTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SauceTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MangoTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BasilTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BasilTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SpicesTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BbqPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BbqPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OatmetalBreadBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#ThickAndCrispyBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BBQTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BasilTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BlackPepperTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#GoudaGoatTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#GreenPepperTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#JerkyPorkTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OnionTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OreganoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PineappleTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SaltTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SmokedPepperTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SmokedSausageTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BlackPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BlackPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SpicesTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#CheesyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#CheesyPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#EdgesStuffedWithCheeseBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OatmetalBreadBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#BasilTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#GoudaGoatTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MozzarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#ChickenTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#ChickenTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#EdgesStuffedWithCheeseBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#EdgesStuffedWithCheeseBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#FruitTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#FruitTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#GoudaGoatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#GoudaGoatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MozzarellaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#GreenPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#GreenPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PepperTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#JalapenoPepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#JalapenoPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#JalapenoPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#JerkyPorkTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#JerkyPorkTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MangoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MangoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SauceTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MozzarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MozzarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OatmetalBreadBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OatmetalBreadBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OnionTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OnionTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#VegetableTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OreganoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OreganoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SpicesTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PineappleTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PineappleTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#FruitTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#Pizza">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SalamiTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SalamiTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SaltTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SaltTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SpicesTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SauceTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SauceTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SmokedPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SmokedPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SpicesTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SmokedSausageTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SmokedSausageTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SpicesTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SpicesTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#ThickAndCrispyBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#ThickAndCrispyBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#ChickenTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#JerkyPorkTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SalamiTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#SmokedSausageTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#EdgesStuffedWithCheeseBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#OatmetalBreadBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#ThickAndCrispyBase"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jaros/ontologies/2021/5/PizzaTutorial-JonathanRosero#PizzaTopping"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
